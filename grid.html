@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(6, 6, 22);
+        }
+        main{
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 70px;
+            display: grid;
+            grid-template-areas: 
+            'a a b'
+            'c d d'
+            'c e e'
+            ;
+        }
+        main div{
+            padding: 2cm;
+            margin: 7px;
+        }
+        .one{
+            background-color: orangered;
+            grid-area: a;
+        }
+        .two{
+            background-color: yellow;
+            grid-area: b;
+        }
+        .three{
+            background-color: green;
+            grid-area: c;
+        }
+        .four{
+            background-color: skyblue;
+            grid-area: d;
+        }
+        .five{
+            background-color: skyblue;
+            grid-area: e;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </main>
+</body>
+</html>
